@@ -1,0 +1,7 @@
+model,target,MAPE
+Ridge,raw log price,8.198382564437857
+Ridge,log markup,8.201697931041394
+Random Forest,raw log price,8.376666619272727
+Random Forest,log markup,7.146754359676062
+LightGBM,raw log price,7.3221710626200975
+LightGBM,log markup,6.977764267525356
