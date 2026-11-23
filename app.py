@@ -88,7 +88,7 @@ with tabs[2]:
     model_cols = [c for c in p.columns if c not in ["date", "species", "wholesale", "actual"]]
     picked = st.multiselect("Models", model_cols, default=[T["metrics_test"].iloc[0]["model"], "AdaBoost"])
     q = p[p["species"] == sp2]
-    fig = go.Figure(go.Scatter(x=q["date"], y=q["actual"], name="actual", line=dict(color="black", width=3)))
+    fig = go.Figure(go.Scatter(x=q["date"], y=q["actual"], name="actual", line=dict(color="yellow", width=3)))
     for name in picked:
         fig.add_trace(go.Scatter(x=q["date"], y=q[name], name=name))
     fig.update_layout(title="Predicted vs actual retail price", yaxis_title="Rs/kg")
